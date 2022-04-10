@@ -196,6 +196,9 @@ body {
   align-items: center;
 }
 
+.have-questions__form--field:first-child {
+  margin-top: 3.052rem;
+}
 .have-questions__form--field {
   margin-top: 1rem;
   padding: 0.8rem;
