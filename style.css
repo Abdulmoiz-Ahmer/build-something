@@ -38,6 +38,17 @@
       0.009rem/0.15px	A Visual Type Scale
       0.007rem/0.12px	A Visual Type Scale
       0.006rem/0.09px	A Visual Type Scale
+      0.005rem/0.08px	A Visual Type Scale
+      0.004rem/0.06px	A Visual Type Scale
+      0.003rem/0.05px	A Visual Type Scale
+      0.002rem/0.04px	A Visual Type Scale
+      0.002rem/0.03px	A Visual Type Scale
+      0.002rem/0.02px	A Visual Type Scale
+      0.001rem/0.02px	A Visual Type Scale
+      0.001rem/0.02px	A Visual Type Scale
+      0.001rem/0.01px	A Visual Type Scale
+      0.001rem/0.01px	A Visual Type Scale
+      0.001rem/0.01px	A Visual Type Scale
 */
 
 :root {
@@ -74,18 +85,18 @@ body {
 }
 
 .banner_title {
-  font-size: 5.96rem;
-  background-color: antiquewhite;
+  font-size: 5.2rem;
   display: inline-block;
   line-height: 5.96rem;
-  letter-spacing: 0.006rem;
-  width: 65%;
+  letter-spacing: 0.001rem;
+  width: 60%;
 }
 
 .banner_description {
   font-size: 1.25rem;
   display: inline-block;
-  width: 65%;
+  line-height: 1.563rem;
+  width: 50%;
 }
 
 .banner_description::after {
