@@ -56,6 +56,7 @@
   --secondary-color: #37363b;
   --tertiary-color: #4d58d7;
   --color-white: #fff;
+  --color-skin: #e0a0a3;
   --gradient-color: rgba(127, 95, 179, 0.7);
 }
 
@@ -175,4 +176,13 @@ body {
   color: var(--color-white);
   border: 0.069rem solid var(--color-white);
   padding: 0.8rem 1.25rem;
+}
+
+footer {
+  background-color: var(--secondary-color);
+  padding: 1.953rem 0;
+}
+
+.footer--link {
+  color: var(--color-skin);
 }
