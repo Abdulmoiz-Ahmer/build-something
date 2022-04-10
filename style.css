@@ -52,7 +52,11 @@
 */
 
 :root {
-  --gradient-color: rgba(100, 46, 236, 0.5);
+  --primary-color: rgba(127, 95, 179);
+  --secondary-color: #37363b;
+  --tertiary-color: #4d58d7;
+  --color-white: #fff;
+  --gradient-color: rgba(127, 95, 179, 0.7);
 }
 
 * {
@@ -63,6 +67,7 @@
 
 body {
   font-family: "Raleway", sans-serif;
+  color: var(--color-white);
 }
 
 .banner {
@@ -78,7 +83,6 @@ body {
 
 .banner_content {
   margin: 0 11.642rem 0 11.642rem;
-  color: #fff;
   position: absolute;
   top: 50%;
   transform: translate(0, -50%);
@@ -105,4 +109,70 @@ body {
   width: 5.96rem;
   height: 2.441rem;
   border-bottom: 1rem solid #fff;
+}
+
+.section-padding {
+  padding: 4.768rem 11.642rem 4.768rem 11.642rem;
+}
+
+.common-margins {
+  padding: 3.052rem 0 0 0;
+}
+
+.common-size {
+  font-size: 1.953rem;
+}
+
+.center {
+  display: block;
+  text-align: center;
+}
+
+.job-description {
+  background-color: var(--secondary-color);
+}
+
+.job-description__flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.job-description__flex-container--item {
+  width: 12.5rem;
+  text-align: center;
+}
+
+.job-description__flex-container--item__image {
+  margin: 0 auto;
+  width: 4.768rem;
+  height: 4.768rem;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  position: relative;
+}
+
+.job-description__flex-container--item__image__icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 32px;
+}
+
+.job-description__flex-container--item__description {
+  margin-top: 1.25rem;
+}
+
+.get-to-know {
+  background-color: var(--tertiary-color);
+}
+
+.get-to-know__contents--read-more {
+  margin-top: 1.563rem;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  color: var(--color-white);
+  border: 0.069rem solid var(--color-white);
+  padding: 0.8rem 1.25rem;
 }
