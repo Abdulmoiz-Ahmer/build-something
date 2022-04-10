@@ -54,6 +54,7 @@
 :root {
   --primary-color: rgba(127, 95, 179);
   --secondary-color: #37363b;
+  --color-black: #333333;
   --tertiary-color: #4d58d7;
   --color-white: #fff;
   --color-skin: #e0a0a3;
@@ -175,11 +176,43 @@ body {
   text-decoration: none;
   color: var(--color-white);
   border: 0.069rem solid var(--color-white);
-  padding: 0.8rem 1.25rem;
+  padding: 0.64rem 1.563rem;
+  cursor: pointer;
 }
 
-footer {
+.get-to-know__contents--read-more:hover {
+  background-color: var(--color-white);
+  color: var(--tertiary-color);
+}
+
+.have-questions {
   background-color: var(--secondary-color);
+}
+
+.have-questions__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.have-questions__form--field {
+  margin-top: 1rem;
+  padding: 0.8rem;
+  border: 1px solid var(--color-white);
+  background-color: transparent;
+  width: 50%;
+}
+
+.have-questions__form--submit {
+}
+
+/* .have-questions__form--field:not(:last-child) {
+  margin-bottom: 1.563rem;
+} */
+
+footer {
+  background-color: var(--color-black);
   padding: 1.953rem 0;
 }
 
