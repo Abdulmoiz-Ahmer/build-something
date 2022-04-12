@@ -142,7 +142,7 @@ body {
 .build-something-funny {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 20px;
+  grid-column-gap: 1.25rem;
 }
 
 .build-something-funny__grid-items--article {
@@ -196,7 +196,7 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(2, 1fr);
-  grid-row-gap: 20px;
+  grid-row-gap: 1.25rem;
 }
 
 .build-something-funny__grid-items--sub-item__image {
@@ -250,7 +250,7 @@ body {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  font-size: 32px;
+  font-size: 2rem;
 }
 
 .job-description__flex-container--item__description {
@@ -302,7 +302,7 @@ body {
 .have-questions__form--field {
   margin-top: 1rem;
   padding: 0.8rem;
-  border: 1px solid var(--white-color);
+  border: 0.0625rem solid var(--white-color);
   background-color: transparent;
   width: 50%;
 }
@@ -314,8 +314,8 @@ body {
   margin-top: 1.563rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: minmax(410px, auto);
-  grid-gap: 20px;
+  grid-auto-rows: minmax(25.625rem, auto);
+  grid-gap: 1.25rem;
 }
 
 .last-works__title {
