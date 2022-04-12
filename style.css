@@ -142,7 +142,6 @@ body {
 .build-something-funny {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 600px;
   grid-column-gap: 20px;
 }
 
@@ -196,13 +195,13 @@ body {
 .build-something-funny__grid-items--wrapper {
   display: grid;
   grid-template-columns: 1fr;
-  grid-auto-rows: 1fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
   grid-row-gap: 20px;
 }
 
 .build-something-funny__grid-items--sub-item__image {
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
 }
 
 .build-something-funny__grid-items--sub-item__textual-wrapper {
