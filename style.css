@@ -51,9 +51,25 @@
       0.001rem/0.01px	A Visual Type Scale
 */
 
-/*1600 1199 991 767 575 */
+/*1440 1199 991 767 575 */
 
 /* Common Settings Starts Here*/
+
+@import url(//db.onlinewebfonts.com/c/059ac22e74e07ea4f291b6ea480c6563?family=Aragon+Sans);
+@font-face {
+  font-family: "Aragon Sans";
+  src: url("//db.onlinewebfonts.com/t/059ac22e74e07ea4f291b6ea480c6563.eot");
+  src: url("//db.onlinewebfonts.com/t/059ac22e74e07ea4f291b6ea480c6563.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/059ac22e74e07ea4f291b6ea480c6563.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/059ac22e74e07ea4f291b6ea480c6563.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/059ac22e74e07ea4f291b6ea480c6563.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/059ac22e74e07ea4f291b6ea480c6563.svg#Aragon Sans")
+      format("svg");
+}
 
 :root {
   --primary-color: rgba(127, 95, 179);
@@ -63,6 +79,12 @@
   --black-color: #333333;
   --skin-color: #e0a0a3;
   --gradient-color: rgba(127, 95, 179, 0.7);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .color-primary {
@@ -113,45 +135,55 @@
   background-color: var(--skin-color);
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.full-width {
+  width: 100%;
+}
+
+.full-height {
+  height: 100%;
+}
+
+.decoration-none {
+  text-decoration: none;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: "Aragon Sans", sans-serif;
 }
 
-h1 {
+.h1 {
   font-size: 5.96rem;
 }
 
-h2 {
+.h2 {
   font-size: 3.052rem;
 }
 
-h3 {
+.h3 {
   font-size: 1.953rem;
 }
 
-h4 {
+.h4 {
   font-size: 1.563rem;
 }
 
-h5 {
+.h5 {
   font-size: 1.25rem;
 }
 
-h6 {
+.h6 {
   font-size: 1rem;
 }
 
 .container {
   margin-right: auto;
   margin-left: auto;
-  max-width: 1600px;
-  padding: 4.768rem 11.642rem 4.768rem 11.642rem;
+  max-width: 1200px;
+  padding: 3.052rem 11.642rem 3.052rem 11.642rem;
 }
 
 .flex {
@@ -173,6 +205,10 @@ h6 {
 
 .flex-column-direction {
   flex-direction: column;
+}
+
+.grid {
+  display: grid;
 }
 
 .block {
@@ -211,13 +247,12 @@ h6 {
 
 .banner_title {
   line-height: 5.96rem;
-  letter-spacing: 0.001rem;
-  width: 60%;
 }
 
 .banner_description {
+  margin-top: 0rem;
   line-height: 1.563rem;
-  width: 50%;
+  width: 75%;
 }
 
 /* Banner Section Ends Here*/
@@ -225,7 +260,6 @@ h6 {
 /* Build Something Funny Section Starts Here*/
 
 .build-something-funny {
-  display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 1.25rem;
 }
@@ -241,10 +275,8 @@ h6 {
 
 .build-something-funny__grid-items--read-more {
   margin-top: 1.563rem;
-  text-decoration: none;
   border: 0.069rem solid var(--primary-color);
   padding: 0.64rem 1.563rem;
-  cursor: pointer;
 }
 
 .build-something-funny__grid-items--read-more:hover {
@@ -252,24 +284,19 @@ h6 {
   color: var(--white-color);
 }
 
-.build-something-funny__grid-items-image {
-  width: 100%;
-  height: 100%;
-}
-
 .build-something-funny__grid-items--wrapper {
-  display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(2, 1fr);
   grid-row-gap: 1.25rem;
 }
 
-.build-something-funny__grid-items--sub-item__image {
-  width: 100%;
-}
-
 .build-something-funny__grid-items--sub-item__textual-wrapper {
   padding: 0 1.25rem;
+}
+
+.build-something-funny__grid-items-image,
+.build-something-funny__grid-items--sub-item__image {
+  object-fit: cover;
 }
 
 /* Build Something Funny Section Ends Here*/
@@ -290,14 +317,9 @@ h6 {
   width: 4.768rem;
   height: 4.768rem;
   border-radius: 50%;
-  position: relative;
 }
 
 .job-description__flex-container--item__image__icon {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
   font-size: 2rem;
 }
 
@@ -310,10 +332,8 @@ h6 {
 
 .get-to-know__contents--read-more {
   margin-top: 1.563rem;
-  text-decoration: none;
   border: 0.069rem solid var(--white-color);
   padding: 0.64rem 1.563rem;
-  cursor: pointer;
 }
 
 .get-to-know__contents--read-more:hover {
@@ -343,15 +363,9 @@ h6 {
 
 .last-works__grid--container {
   margin-top: 1.563rem;
-  display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: minmax(25.625rem, auto);
   grid-gap: 1.25rem;
-}
-
-.last-works__grid--container--items-image {
-  width: 100%;
-  height: 100%;
 }
 
 /* Last Works Section Ends Here*/
