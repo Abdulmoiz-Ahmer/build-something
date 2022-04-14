@@ -215,6 +215,10 @@ body {
   text-align: center;
 }
 
+.common-margin {
+  margin-top: 3.96rem;
+}
+
 /* Common Settings Ends Here*/
 
 /* Banner Section Starts Here*/
@@ -268,10 +272,14 @@ body {
   font-weight: 300;
 }
 
+.build-something-funny__grid-items--article {
+  padding: 0 1rem;
+}
+
 .build-something-funny__grid-items--read-more {
   margin-top: 1.563rem;
   border: 0.069rem solid var(--primary-color);
-  padding: 0.64rem 1.563rem;
+  padding: 0.64rem 2.563rem;
 }
 
 .build-something-funny__grid-items--read-more:hover {
@@ -299,7 +307,6 @@ body {
 /* Job description Section Starts Here*/
 
 .job-description__flex-container {
-  margin-top: 5.96rem;
   justify-content: space-between;
 }
 
@@ -310,13 +317,13 @@ body {
 
 .job-description__flex-container--item__image {
   margin: 0 auto;
-  width: 5.96rem;
-  height: 5.96rem;
+  width: 5rem;
+  height: 5rem;
   border-radius: 50%;
 }
 
 .job-description__flex-container--item__image__icon {
-  font-size: 4rem;
+  font-size: 3.5rem;
 }
 
 .job-description__flex-container--item__description {
@@ -325,11 +332,14 @@ body {
 /* Job description Section Ends Here*/
 
 /* Get to know Section Starts Here*/
+.get-to-know__contents--title {
+  margin-bottom: -30px;
+}
 
 .get-to-know__contents--read-more {
-  margin-top: 1.563rem;
+  margin-top: 1rem;
   border: 0.069rem solid var(--white-color);
-  padding: 0.64rem 1.563rem;
+  padding: 0.64rem 2.563rem;
 }
 
 .get-to-know__contents--read-more:hover {
@@ -341,16 +351,15 @@ body {
 
 /* Have Questions Section Starts Here*/
 
-.have-questions__form--field:first-child {
-  margin-top: 3.052rem;
-}
-
 .have-questions__form--field {
-  margin-top: 1rem;
   padding: 0.8rem;
   border: 0.0625rem solid var(--white-color);
   background-color: transparent;
   width: 50%;
+}
+
+.have-questions__form--field:not(:first-child) {
+  margin-top: 1rem;
 }
 
 /* Have Questions Section Ends Here*/
@@ -358,7 +367,6 @@ body {
 /* Last Works Section Starts Here*/
 
 .last-works__grid--container {
-  margin-top: 1.563rem;
   grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: minmax(350px, auto);
   grid-gap: 1rem;
