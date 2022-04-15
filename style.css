@@ -576,30 +576,81 @@ body {
 
 @media only screen and (max-width: 567px) {
   .h1 {
-    font-size: 2.441rem;
-  }
-
-  .h2 {
-    font-size: 1.563rem;
-  }
-
-  .h3 {
     font-size: 1.25rem;
   }
 
-  .h4 {
+  .h2 {
     font-size: 1rem;
   }
 
-  .h5 {
+  .h3 {
     font-size: 0.8rem;
   }
 
-  .h6 {
+  .h4 {
     font-size: 0.6rem;
   }
 
+  .h5 {
+    font-size: 0.4rem;
+  }
+
+  .h6 {
+    font-size: 0.2rem;
+  }
+
   .container {
-    padding: 3.052rem 5.96rem 3.052rem 5.96rem;
+    padding: 3.052rem;
+  }
+
+  .banner_title {
+    line-height: 2rem;
+    width: 70%;
+  }
+
+  .banner_description {
+    width: 70%;
+  }
+
+  .banner_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .build-something-funny {
+    grid-template-columns: 1fr;
+    grid-row-gap: 1.25rem;
+  }
+
+  .job-description__flex-container {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .job-description__flex-container--item__image {
+    margin: 0 auto;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+  }
+
+  .job-description__flex-container--item__image__icon {
+    font-size: 1rem;
+  }
+
+  .job-description__flex-container--item__description {
+    margin-top: 0px;
+  }
+
+  .last-works__grid--container {
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(200px, auto);
+  }
+
+  .have-questions__form--field {
+    padding: 0.5rem;
+    width: 80%;
   }
 }
