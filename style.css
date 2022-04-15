@@ -1,56 +1,3 @@
-/* 
-      28.422rem/454.75px	A Visual Type Scale
-      22.737rem/363.80px	A Visual Type Scale
-      18.19rem/291.04px	A Visual Type Scale
-      14.552rem/232.83px	A Visual Type Scale
-      11.642rem/186.26px	A Visual Type Scale
-      9.313rem/149.01px	A Visual Type Scale
-      7.451rem/119.21px	A Visual Type Scale
-      5.96rem/95.37px	A Visual Type Scale
-      4.768rem/76.29px	A Visual Type Scale
-      3.815rem/61.04px	A Visual Type Scale
-      3.052rem/48.83px	A Visual Type Scale
-      2.441rem/39.06px	A Visual Type Scale
-      1.953rem/31.25px	A Visual Type Scale
-      1.563rem/25.00px	A Visual Type Scale
-      1.25rem/20.00px	A Visual Type Scale
-      1rem/16.00px	A Visual Type Scale
-      0.8rem/12.80px	A Visual Type Scale
-      0.64rem/10.24px	A Visual Type Scale
-      0.512rem/8.19px	A Visual Type Scale
-      0.41rem/6.55px	A Visual Type Scale
-      0.328rem/5.24px	A Visual Type Scale
-      0.262rem/4.19px	A Visual Type Scale
-      0.21rem/3.36px	A Visual Type Scale
-      0.168rem/2.68px	A Visual Type Scale
-      0.134rem/2.15px	A Visual Type Scale
-      0.107rem/1.72px	A Visual Type Scale
-      0.086rem/1.37px	A Visual Type Scale
-      0.069rem/1.10px	A Visual Type Scale
-      0.055rem/0.88px	A Visual Type Scale
-      0.044rem/0.70px	A Visual Type Scale
-      0.035rem/0.56px	A Visual Type Scale
-      0.028rem/0.45px	A Visual Type Scale
-      0.023rem/0.36px	A Visual Type Scale
-      0.018rem/0.29px	A Visual Type Scale
-      0.014rem/0.23px	A Visual Type Scale
-      0.012rem/0.18px	A Visual Type Scale
-      0.009rem/0.15px	A Visual Type Scale
-      0.007rem/0.12px	A Visual Type Scale
-      0.006rem/0.09px	A Visual Type Scale
-      0.005rem/0.08px	A Visual Type Scale
-      0.004rem/0.06px	A Visual Type Scale
-      0.003rem/0.05px	A Visual Type Scale
-      0.002rem/0.04px	A Visual Type Scale
-      0.002rem/0.03px	A Visual Type Scale
-      0.002rem/0.02px	A Visual Type Scale
-      0.001rem/0.02px	A Visual Type Scale
-      0.001rem/0.02px	A Visual Type Scale
-      0.001rem/0.01px	A Visual Type Scale
-      0.001rem/0.01px	A Visual Type Scale
-      0.001rem/0.01px	A Visual Type Scale
-*/
-
 /* Common Settings Starts Here*/
 
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap");
@@ -74,14 +21,6 @@
 
 .color-primary {
   color: var(--primary-color);
-}
-
-.color-secondary {
-  color: var(--secondary-color);
-}
-
-.color-tertiary {
-  color: var(--tertiary-color);
 }
 
 .color-white {
@@ -108,16 +47,8 @@
   background-color: var(--tertiary-color);
 }
 
-.bg-white {
-  background-color: var(--white-color);
-}
-
 .bg-black {
   background-color: var(--black-color);
-}
-
-.bg-skin {
-  background-color: var(--skin-color);
 }
 
 .bg-gray {
@@ -149,10 +80,6 @@ body {
   font-size: 5.96rem;
 }
 
-.h2 {
-  font-size: 3.052rem;
-}
-
 .h3 {
   font-size: 1.953rem;
 }
@@ -172,7 +99,7 @@ body {
 .container {
   margin-right: auto;
   margin-left: auto;
-  max-width: 1440px;
+  max-width: 90rem;
   padding: 3.052rem 11.642rem 3.052rem 11.642rem;
 }
 
@@ -242,7 +169,7 @@ body {
 .banner_title {
   line-height: 7rem;
   width: 66%;
-  margin-bottom: -14px;
+  margin-bottom: -0.875rem;
 }
 
 .banner_description {
@@ -340,7 +267,7 @@ body {
 
 /* Get to know Section Starts Here*/
 .get-to-know__contents--title {
-  margin-bottom: -30px;
+  margin-bottom: -1.875rem;
 }
 
 .get-to-know__contents--read-more {
@@ -375,7 +302,7 @@ body {
 
 .last-works__grid--container {
   grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: minmax(350px, auto);
+  grid-auto-rows: minmax(21.875rem, auto);
   grid-gap: 1rem;
 }
 
@@ -396,10 +323,6 @@ body {
 @media only screen and (max-width: 1199px) {
   .h1 {
     font-size: 3.052rem;
-  }
-
-  .h2 {
-    font-size: 1.953rem;
   }
 
   .h3 {
@@ -445,11 +368,11 @@ body {
   }
 
   .job-description__flex-container--item__image__icon {
-    font-size: 32px;
+    font-size: 2rem;
   }
 
   .get-to-know__contents--title {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 
   .get-to-know__contents--read-more {
@@ -459,17 +382,13 @@ body {
   }
 
   .last-works__grid--container {
-    grid-auto-rows: minmax(300px, auto);
+    grid-auto-rows: minmax(18.75rem, auto);
   }
 }
 
 @media only screen and (max-width: 991px) {
   .h1 {
     font-size: 2.441rem;
-  }
-
-  .h2 {
-    font-size: 1.563rem;
   }
 
   .h3 {
@@ -512,17 +431,13 @@ body {
   }
 
   .last-works__grid--container {
-    grid-auto-rows: minmax(250px, auto);
+    grid-auto-rows: minmax(15.625rem, auto);
   }
 }
 
 @media only screen and (max-width: 767px) {
   .h1 {
     font-size: 1.563rem;
-  }
-
-  .h2 {
-    font-size: 1.25rem;
   }
 
   .h3 {
@@ -577,10 +492,6 @@ body {
 @media only screen and (max-width: 567px) {
   .h1 {
     font-size: 1.25rem;
-  }
-
-  .h2 {
-    font-size: 1rem;
   }
 
   .h3 {
@@ -641,12 +552,12 @@ body {
   }
 
   .job-description__flex-container--item__description {
-    margin-top: 0px;
+    margin-top: 0;
   }
 
   .last-works__grid--container {
     grid-template-columns: 1fr;
-    grid-auto-rows: minmax(200px, auto);
+    grid-auto-rows: minmax(12.5rem, auto);
   }
 
   .have-questions__form--field {
@@ -654,3 +565,67 @@ body {
     width: 100%;
   }
 }
+
+/*** uncss> filename: https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css ***/
+.las {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+.la-chalkboard:before {
+  content: "\f51b";
+}
+.la-desktop:before {
+  content: "\f108";
+}
+.la-palette:before {
+  content: "\f53f";
+}
+.la-user-secret:before {
+  content: "\f21b";
+}
+@font-face {
+  font-family: "Line Awesome Brands";
+  font-style: normal;
+  font-weight: 400;
+  font-display: auto;
+  src: url(../fonts/la-brands-400.eot);
+  src: url(../fonts/la-brands-400.eot?#iefix) format("embedded-opentype"),
+    url(../fonts/la-brands-400.woff2) format("woff2"),
+    url(../fonts/la-brands-400.woff) format("woff"),
+    url(../fonts/la-brands-400.ttf) format("truetype"),
+    url(../fonts/la-brands-400.svg#lineawesome) format("svg");
+}
+@font-face {
+  font-family: "Line Awesome Free";
+  font-style: normal;
+  font-weight: 400;
+  font-display: auto;
+  src: url(../fonts/la-regular-400.eot);
+  src: url(../fonts/la-regular-400.eot?#iefix) format("embedded-opentype"),
+    url(../fonts/la-regular-400.woff2) format("woff2"),
+    url(../fonts/la-regular-400.woff) format("woff"),
+    url(../fonts/la-regular-400.ttf) format("truetype"),
+    url(../fonts/la-regular-400.svg#lineawesome) format("svg");
+}
+@font-face {
+  font-family: "Line Awesome Free";
+  font-style: normal;
+  font-weight: 900;
+  font-display: auto;
+  src: url(../fonts/la-solid-900.eot);
+  src: url(../fonts/la-solid-900.eot?#iefix) format("embedded-opentype"),
+    url(../fonts/la-solid-900.woff2) format("woff2"),
+    url(../fonts/la-solid-900.woff) format("woff"),
+    url(../fonts/la-solid-900.ttf) format("truetype"),
+    url(../fonts/la-solid-900.svg#lineawesome) format("svg");
+}
+.las {
+  font-family: "Line Awesome Free";
+  font-weight: 900;
+}
+
